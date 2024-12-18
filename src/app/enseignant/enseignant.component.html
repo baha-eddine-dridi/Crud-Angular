@@ -1,0 +1,10 @@
+<h2>Bonjour je suis votre enseignant</h2>
+<h2>Question que j'ai posé :{{question}}</h2>
+
+
+
+<app-etudiant [questiondeMonEnseignant]="question"
+(reponseEtudiantEnvoyee)="correction($event)"
+></app-etudiant>
+
+<h2>Retour :{{message}}</h2>

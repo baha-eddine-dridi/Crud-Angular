@@ -1,0 +1,18 @@
+<h1>Todo list</h1>
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <th>UserId</th>
+    <th>Completed</th>
+  <tr class="todo-item" *ngFor="let todo of listTodo">
+   
+    <td>{{todo.title}}</td>
+    <td>{{todo.userId}}</td>
+    <td>{{todo.completed}}</td>
+   
+
+  </tr>
+
+</table>
+<button (click)="getStat()">getStat</button>
+<h1>Todo number : {{count}}</h1>
